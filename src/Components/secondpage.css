@@ -1,0 +1,29 @@
+.content-text {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  color: white;
+  width: 35%;
+  min-width: 300px;
+}
+
+.about-cards {
+  width: 40%;
+  min-width: 400px;
+  display: flex;
+}
+
+.card {
+  background: white;
+  padding: 30px 15px;
+  margin: 10px 5px;
+}
+
+.about-icon {
+  width: 50px !important;
+  height: 50px !important;
+}

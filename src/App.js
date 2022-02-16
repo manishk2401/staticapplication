@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Firstpage from './Components/Firstpage';
+import Navbar from './Components/Navbar';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from "react-router-dom";
+import Seventhpage from './Components/Seventhpage';
+import Secondpage from './Components/Secondpage';
+import Thirdpage from './Components/Thirdpage';
+import Forthpage from './Components/Forthpage';
+import Fifthpage from './Components/Fifthpage';
+import Sixthpage from './Components/Sixthpage';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+
+        <Navbar></Navbar>
+        <Routes>
+          <Route path="/" element={<Firstpage />} />
+          <Route path="/home" element={<Firstpage />} />
+          <Route path="/about" element={<Secondpage />} />
+          <Route path="/offer" element={<Thirdpage />} />
+          <Route path="/thinking" element={<Forthpage />} />
+          <Route path="/whatwedo" element={<Fifthpage />} />
+          <Route path="/portfolio" element={<Sixthpage />} />
+          <Route path="/contact" element={<Seventhpage />} />
+        </Routes>
+      </Router>
+
+    </>
   );
 }
 

@@ -1,0 +1,20 @@
+.portfolio-pic,
+.portfolio-heading {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px 15px;
+  width: fit-content;
+  margin: auto;
+}
+
+.portfolio-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

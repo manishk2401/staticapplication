@@ -1,0 +1,43 @@
+.creative-box {
+  display: flex;
+  height: 400px;
+  width: 70%;
+  position: relative;
+}
+
+.creative-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+}
+
+.vector-img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+  top: -20%;
+  left: -10%;
+  border-radius: 50%;
+}
+.vector-img2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  z-index: -2;
+  bottom: -10%;
+  right: -12%;
+  border-radius: 50%;
+  border: solid 50px darkblue;
+}
+
+.vector-img3 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  z-index: -1;
+  bottom: -20%;
+  right: 10%;
+}
